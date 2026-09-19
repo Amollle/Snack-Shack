@@ -1,5 +1,7 @@
 # The Snack Shack
 
+Live site: https://amollle.github.io/Snack-Shack/
+
 A static student snack-club menu built with HTML, CSS, and JavaScript. No build step, framework, accounts, or backend.
 
 Open `dist/index.html` in a browser, or serve the `dist` directory with any static web server.

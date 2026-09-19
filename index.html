@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ed">
+  <meta name="description" content="The Snack Shack student lunch club. Find your next snack, check the price, and swing by at lunch.">
+  <title>The Snack Shack — Good food. Short lines.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23dc4b2d'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-size='42' font-weight='bold' fill='%23fff8e8'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Skip to menu</a>
+  <div class="page">
+    <header class="masthead">
+      <div class="eyebrow"><span class="little-star" aria-hidden="true">✳</span> YOUR LUNCH BREAK, UPGRADED.</div>
+      <div class="title-row">
+        <h1>The Snack Shack<span class="title-dot">.</span></h1>
+        <div class="club-stamp" aria-label="Student run snack club"><span>STUDENT RUN</span><strong>made for<br> the break.</strong><span>SNACK CLUB</span></div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+        <div class="menu-heading-row"><h2 id="menu-heading">The menu <span class="heading-line" aria-hidden="true"></span></h2><span class="menu-caption">Little prices. Big lunch energy.</span></div>
+        <div class="filters" role="group" aria-label="Filter menu">
+          <button type="button" class="filter active" data-filter="all" aria-pressed="true">Everything <span>6</span></button>
+          <button type="button" class="filter" data-filter="savory" aria-pressed="false">Savory</button>
+          <button type="button" class="filter" data-filter="sweet" aria-pressed="false">Sweet</button>
+          <button type="button" class="filter" data-filter="drinks" aria-pressed="false">Drinks</button>
+        </div>
+        <p id="menu-status" class="sr-only" role="status" aria-live="polite"></p>
+        <div class="menu-grid">
+          <article class="menu-card" data-category="savory">
+            <div class="food-photo"><span class="food-art cheese" role="img" aria-label="Golden grilled cheese sandwich halves"></span><span class="food-tag">THE LUNCH MVP</span></div>
+            <div class="card-info"><div class="name-price"><h3>Grilled cheese</h3><span class="price">$3.00</span></div><p>Golden toast. Melty cheddar.<br> A very good lunch decision.</p></div>
+          </article>
+          <article class="menu-card" data-category="savory">
+            <div class="food-photo"><span class="food-art pretzel" role="img" aria-label="Golden soft pretzel sprinkled with salt"></span></div>
+            <div class="card-info"><div class="name-price"><h3>Soft pretzel</h3><span class="price">$2.00</span></div><p>Warm, soft, and a little salty.<br> Twisted to perfection.</p></div>
+          </article>
+          <article class="menu-card" data-category="savory">
+            <div class="food-photo"><span class="food-art popcorn" role="img" aria-label="A paper cup filled with popcorn"></span></div>
+            <div class="card-info"><div class="name-price"><h3>Popcorn cup</h3><span class="price">$1.00</span></div><p>A cup of buttery crunch.<br> Go on, grab a handful.</p></div>
+          </article>
+          <article class="menu-card" data-category="sweet">
+            <div class="food-photo"><span class="food-art cookies" role="img" aria-label="Two chunky chocolate chip cookies"></span><span class="food-tag tag-yellow">2 COOKIES, 1 HAPPY YOU</span></div>
+            <div class="card-info"><div class="name-price"><h3>Cookie duo</h3><span class="price">$1.50</span></div><p>Two chocolate chip cookies.<br> Sharing is entirely optional.</p></div>
+          </article>
+          <article class="menu-card" data-category="sweet">
+            <div class="food-photo"><span class="food-art brownie" role="img" aria-label="A thick fudgy chocolate brownie"></span></div>
+            <div class="card-info"><div class="name-price"><h3>Fudge brownie</h3><span class="price">$2.00</span></div><p>Crackly top. Fudgy middle.<br> Chocolate all the way through.</p></div>
+          </article>
+          <article class="menu-card" data-category="drinks">
+            <div class="food-photo"><span class="food-art lemonade" role="img" aria-label="Strawberry lemonade with a lemon slice and straw"></span></div>
+            <div class="card-info"><div class="name-price"><h3>Pink lemonade</h3><span class="price">$1.50</span></div><p>Strawberry, lemon, and ice.<br> Your lunch break refresher.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="pickup-column" aria-labelledby="pickup-heading">
+        <section class="pickup-note">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="note-top"><span>SEE YOU AT LUNCH</span><svg aria-hidden="true" viewBox="0 0 40 40"><path d="M11 27C2 11 22 1 30 12c8 13-12 23-20 10M14 15h.1M25 14h.1M15 22q6 5 11-2"/></svg></div>
+          <h2 id="pickup-heading">Find the shack.</h2>
+          <div class="pickup-detail"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><h3>The courtyard</h3><p>Yellow table outside the cafeteria</p></div></div>
+          <div class="pickup-detail"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><div><h3>12:15–1:00 pm</h3><p>Monday–Friday · lunch break</p></div></div>
+          <div class="note-bottom">Just swing by &amp; pick your snack.<span>No preorders needed.</span></div>
+        </section>
+        <div class="aside-footnote"><span aria-hidden="true">✳</span><p>Got a food allergy?<br> Ask us about ingredients<br> before you grab a bite.</p></div>
+      </aside>
+    </main>
+
+    <footer><span class="footer-brand">The Snack Shack <span aria-hidden="true">✳</span></span><p>A little snack. A better break.</p><small>Sample menu &amp; pickup details.</small></footer>
+  </div>
+</body>
+</html>
